@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Asyncorp &middot; La manera más fácil y rápida de administrar tu negocio desde cualquier plataforma, navegador, o dispositivo.</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- set the page title -->
+  <title>asyncorp &middot; La manera más fácil y rápida de administrar tu negocio desde cualquier plataforma, navegador, o dispositivo.</title>
   <meta name="description"
     content="Asyncorp es un sistema, diseñado para pequeñas, medianas y grandes empresas. Cuenta con la más avanzada tecnología en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto TODO INTEGRADO.">
   <meta property="og:url" content="https://asyncorp.com">
@@ -13,485 +14,797 @@
   <meta property="og:title" content="La manera más fácil y rápida de administrar tu negocio desde cualquier plataforma, navegador, o dispositivo.">
   <meta property="og:description"
     content="Asyncorp es un sistema, diseñado para pequeñas, medianas y grandes empresas. Cuenta con la más avanzada tecnología en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto TODO INTEGRADO.">
-  <!--<meta property="og:image" content="http://asyncorp.com/asyncorp.jpg">-->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@asyncorp">
-  <meta name="twitter:creator" content="@asyncorp">
-  <meta name="twitter:title" content="La manera más fácil y rápida de administrar tu negocio desde cualquier plataforma, navegador, o dispositivo.">
-  <meta name="twitter:description"
-    content="Asyncorp es un sistema, diseñado para pequeñas, medianas y grandes empresas. Cuenta con la más avanzada tecnología en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto TODO INTEGRADO.">
-  <meta name="twitter:image" content="http://asyncorp.com/asyncorp.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="manifest.json">
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#1c90fb">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
-  <link rel="stylesheet" href="css/vendor.min.css">
-  <link rel="stylesheet" href="css/asyncorp.min.css">
-  <link rel="stylesheet" href="css/landing-page.min.css">
+  <meta name="theme-color" content="#187fde">
+  <!-- inlcude google cabin font cdn link -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- inlcude google nunito font cdn link -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- include the site bootstrap stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- include theme color setting stylesheet -->
+  <link rel="stylesheet" href="css/colors.css">
+  <!-- include the site responsive stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body class="spinner spinner-primary spinner-lg">
-  <div class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" style="padding: 10px 15px;" href="index.html">
-          <img class="navbar-brand-logo" style="height: 35px;" src="img/logo.png" alt="Asyncorp">
-        </a>
-      </div>
-      <nav id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#caracteristicas">Características</a></li>
-          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <!--
-              <li><a href="#">Equipo</a></li>
-              <li>
-                <div class="navbar-btn-group">
-                  <a class="navbar-btn btn btn-primary btn-block disabled" href="signup-1.html">Ingresar</a>
+<body>
+  <!-- pageWrapper -->
+  <div id="pageWrapper">
+    <div class="phStickyWrap">
+      <!-- pageHeader -->
+      <header id="pageHeader" class="w-100 headerFixer">
+        <div class="container">
+          <!-- hdHolder -->
+          <div class="hdHolder position-relative pt-2 pb-2 pt-lg-4 pb-lg-4 pt-xl-7 pb-xl-7">
+            <div class="row">
+              <div class="col-4 col-md-2">
+                <!-- logo -->
+                <div class="logo mt-1">
+                  <a href="javascript:void(0);">
+                    <img src="images/logo-inverse.png" width="133" height="40" class="img-fluid" alt="Asaas">
+                  </a>
                 </div>
-              </li>
-              <li><a href="#">Testimonios</a></li>
-            -->
-        </ul>
-      </nav>
+              </div>
+              <div class="col-8 col-md-10 position-static">
+                <!-- pageNav -->
+                <nav id="pageNav" class="navbar navbar-expand-md navbar-dark justify-content-end p-0 align-items-start position-static">
+                  <!-- pageMainNavCollapse -->
+                  <div class="collapse navbar-collapse pageMainNavCollapse justify-content-end" id="pageMainNavCollapse">
+                    <!-- mainNavigation -->
+                    <ul class="navbar-nav mainNavigation fwSemi pt-md-2">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#pageWrapper">Inicio <span class="sr-only">(current)</span></a>
+                      </li>
+                      <!-- <li class="nav-item">
+												<a class="nav-link" href="#scrollTo2">¿Por qué?</a>
+											</li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollTo3">Características</a>
+                      </li>
+                      <!-- <li class="nav-item">
+												<a class="nav-link" href="#scrollTo4">Testimonios</a>
+											</li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollTo5">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollTo6">Preguntas Frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollTo7">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- hdBtn -->
+                  <!-- <a href="javascript:void(0);" class="btn btn-info font-weight-normal text-capitalize hdBtn ml-md-3 ml-md-6 ml-lg-12 position-relative border-0 p-0" data-hover="Get Started">
+										<span class="d-block btnText">Get Started</span>
+									</a> -->
+                  <!-- pageNavOpener -->
+                  <button class="navbar-toggler pageNavOpener ml-3" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse"
+                    aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-  </div>
-  <div id="home" class="masthead">
-    <div class="masthead-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
+    <main>
+      <!-- introBlock -->
+      <section class="introBlock d-flex w-100 position-relative text-white" style="background-color: #1e90ff !important;">
+        <div class="w-100 d-flex align-items-center">
+          <!-- ibHolder -->
+          <div class="w-100 position-relative ibHolder py-19 py-md-23 py-xl-29">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                  <div class="captionWrap position-relative">
+                    <div class="wow fadeInUp" data-wow-delay="0.5s">
+                      <h1 class="text-white font-weight-bold mb-5">La manera más fácil y rápida de administrar tu negocio </h1>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="1s">
+                      <p>¡No pierdas ni un minuto más, concéntrate en tus ventas!</p>
+                    </div>
+                    <!-- <div class="wow fadeInUp" data-wow-delay="1.5s">
+											<a href="javascript:void(0);" class="btn btn-info btnMin align-top mt-6 p-0 border-0 position-relative" data-hover="Try it for Free">
+												<span class="d-block btnText">Try it for Free</span>
+											</a>
+										</div> -->
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block imageWrap wow bounceInRight" data-wow-delay="2s">
+                  <!-- imgHolder -->
+                  <div class="imgHolder pl-7 pl-xl-12 position-relative">
+                    <img src="images/img01.png" class="img-fluid" alt="image description">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- svgBg -->
+        <svg class="svgBg">
+          <defs>
+            <clipPath id="path01" clipPathUnits="objectBoundingBox">
+              <path d="M 1 0 L 0.93 0 C 0.7 0.18 0.77 0.26 0.51 0.34 Q 0.36 0.38 0.52 1 L 1 1 Z"></path>
+            </clipPath>
+          </defs>
+          <rect width="100%" height="100%" style="clip-path: url(#path01);" fill="#369cfb"></rect>
+        </svg>
+        <!-- ibBgPattern -->
+        <span class="position-absolute w-100 h-100 ibBgPattern" style="background-image: url(images/bgShapes01.png);"></span>
+      </section>
+      <!-- sponsorsAside -->
+      <aside class="sponsorsAside position-relative text-center">
+        <div class="container">
+          <div class="bg-white mt-n12 mt-md-n15 shadow-lg py-4 py-md-7">
+            <!-- logosSlider -->
+            <div class="logosSlider">
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/idashboard.png" class="img-fluid" alt="stylus">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/inotification.png" class="img-fluid" alt="drkht">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/igraph.png" class="img-fluid" alt="Brook.">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/isupport.png" class="img-fluid" alt="its alive!">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/icost.png" class="img-fluid" alt="nowhere among us">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/imissile.png" class="img-fluid" alt="stylus">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/icloud.png" class="img-fluid" alt="drkht">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/iresponsive.png" class="img-fluid" alt="Brook.">
+                </div>
+              </div>
+              <!-- slide -->
+              <div>
+                <!-- logoWrap -->
+                <div class="logoWrap">
+                  <img src="images/isecurity.png" class="img-fluid" alt="its alive!">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div id="scrollTo3" class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+        <!-- featureBlock -->
+        <section class="featureBlock pt-8 pb-8 pt-md-13 pb-md-13 pt-lg-19 pb-lg-20 pt-xl-23 pb-xl-24">
+          <div class="container">
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-1">
-                <h3 class="masthead-heading">La manera más fácil y rápida de administrar tu negocio desde cualquier plataforma, navegador, o
-                  dispositivo.</h3>
-                <p class="masthead-lead">Asyncorp es un sistema, diseñado para pequeñas, medianas y grandes empresas. Cuenta con la más avanzada
-                  tecnología en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto "TODO INTEGRADO".</p>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <!-- headingHead -->
+                <header class="headingHead textMedium text-center mb-8 mb-lg-10 mb-xl-14 wow bounceInUp">
+                  <h2 class="mb-5">Un sistema, diseñado para pequeñas, medianas y grandes empresas.</h2>
+                  <!-- <p> La tecnología más avanzada en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto <b>TODO INTEGRADO</b>.</p> -->
+                </header>
               </div>
-              <div class="col-sm-12 col-sm-offset-0">
-                <img class="masthead-img" src="img/4299815763.png" alt="Asyncorp">
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+                <!-- featColumn -->
+                <article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+                  <span class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5" data-theme="pink">
+                    <span class="w-100 d-block p-1">
+                      <img src="images/4337135755.png" width="35" height="31" alt="icon">
+                    </span>
+                  </span>
+                  <h3 class="h6 fontBase font-weight-normal mb-2">
+                    <a href="javascript:void(0);">Nube</a>
+                  </h3>
+                  <p>Aplicaciones en la nube diseñadas para ayudar a cualquier tipo de empresa a ser más eficientes, compatibles y rentables.</p>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+                <!-- featColumn -->
+                <article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+                  <span class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5" data-theme="info">
+                    <span class="w-100 d-block p-1">
+                      <img src="images/4460638882.png" width="35" height="33" alt="icon">
+                    </span>
+                  </span>
+                  <h3 class="h6 fontBase font-weight-normal mb-2">
+                    <a href="javascript:void(0);">Ideas</a>
+                  </h3>
+                  <p>Ideas creativas e innovadoras de un equipo de expertos brindan soluciones fuera de lo rutinario y agradable para los clientes.
+                  </p>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+                <!-- featColumn -->
+                <article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+                  <span class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5" data-theme="yellow">
+                    <span class="w-100 d-block p-1">
+                      <img src="images/4522104820.png" width="35" height="33" alt="icon">
+                    </span>
+                  </span>
+                  <h3 class="h6 fontBase font-weight-normal mb-2">
+                    <a href="javascript:void(0);">Multiplataforma</a>
+                  </h3>
+                  <p>Accesible desde cualquier dispositivo (PC, tablet y móvil) para la facilidad y comodidad de todos.</p>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+                <!-- featColumn -->
+                <article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+                  <span class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5" data-theme="purple">
+                    <span class="w-100 d-block p-1">
+                      <img src="images/4608823220.png" width="32" height="32" alt="icon">
+                    </span>
+                  </span>
+                  <h3 class="h6 fontBase font-weight-normal mb-2">
+                    <a href="javascript:void(0);">Asyncorp</a>
+                  </h3>
+                  <p>Es la solución más avanzada para a facilitar las tareas y procesos de pequeñas medianas y grandes empresas.</p>
+                </article>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
-  </div>
-  <div id="caracteristicas" class="section">
-    <div class="container">
-      <div class="row" style="padding:0;margin:0">
-        <!--<div class="col-xs-12" data-animation-name="fadeIn" data-animation-delay="01s">
-            <h3>Modi blanditiis mollitia consequatur suscipit, natus possimus totam rem eius.</h3>
+
+      <!-- allFeatBlock -->
+      <section class="allFeatBlock pt-7 pt-md-10 pt-lg-15 pt-xl-23 pb-3 pb-lg-10 pb-xl-14">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1 col-xl-6 offset-xl-3">
+              <!-- headingHead -->
+              <header class="headingHead textMedium text-center mb-8 mb-lg-15 wow bounceInUp">
+                <h1 class="mb-5">Características</h1>
+                <p> La tecnología más avanzada en la nube permitiendo seguridad, disponibilidad, con funcionalidad total bajo el concepto <b>TODO
+                    INTEGRADO</b>.</p>
+              </header>
+            </div>
+          </div>
+          <!-- afColumnsWrap -->
+          <div class="afColumnsWrap">
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/group.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pl-md-7 pl-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Alta disponibilidad.</h3>
+                    </header>
+                    <dl class="mb-0 mt-6 overflow-hidden afDefList">
+                      <dt>
+                        <i class="icomoon-clock icn"><span class="sr-only">icon</span></i>
+                      </dt>
+                      <dd>El acceso a tu información estará disponible las 24 / 7 con toda la seguridad y confiabilidad.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/img03.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pr-md-7 pr-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Fácil de instalar & Usar </h3>
+                      <p>No tienes que descargar ni instalar ningún software y siempre vas a trabajar con la última y mejorada versión.</p>
+                    </header>
+                    <dl class="mb-0 mt-6 overflow-hidden afDefList">
+                      <dt>
+                        <i class="icomoon-tick icn"><span class="sr-only">icon</span></i>
+                      </dt>
+                      <dd> Está 100% en la nube y podrás acceder a ella desde cualquier dispositivo conectado a Internet.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/contact.jpg" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pl-md-7 pl-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Soporte Garantizado</h3>
+                      <p>Siempre estaremos allí para ayudarte a solucionar cualquier inconveniente.</p>
+                    </header>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/img03.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/cloud.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pr-md-7 pr-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Servidores en la Nube </h3>
+                      <p>Implementación, configuración y mantenimiento de servidores virtuales dedicados, especialmente preparados para su negocio.
+                      </p>
+                    </header>
+                    <dl class="mb-0 mt-6 overflow-hidden afDefList">
+                      <dt>
+                        <i class="icomoon-lock icn"><span class="sr-only">icon</span></i>
+                      </dt>
+                      <dd> Toda la información entre el navegador y el servidor se encuentra encriptada a través del protocolo de seguridad SSL.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/clients.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pl-md-7 pl-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Involucrados con nuestros clientes</h3>
+                      <p>Nos preocupa los interés y necesidades de nuestros clientes, es por eso que estamos dispuesto a ayudar en todos los aspectos
+                        que necesiten para hacer crecer sus negocios.</p>
+                    </header>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/hero-img.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pr-md-7 pr-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">Precios Flexibles </h3>
+                      <p>Ofrecemos los precios mas bajos del mercado porque nuestro servicio se adecua al presupuesto de cada negocio.</p>
+                    </header>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/custom.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pl-md-7 pl-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">100% Personalizable</h3>
+                      <p>Entendemos perfectamente la premisa <b>cada empresa y cada individuo tiene distintas necesidades</b>.</p>
+                    </header>
+                    <dl class="mb-0 mt-6 overflow-hidden afDefList">
+                      <dt>
+                        <i class="icomoon-tick icn"><span class="sr-only">icon</span></i>
+                      </dt>
+                      <dd>Brindamos soluciones a medida, desarrollando software particular para cada necesidad.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- afColumn -->
+            <article class="afColumn mb-7 mb-md-11 mb-lg-18">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 wow slideInLeft">
+                  <!-- imgHolder -->
+                  <div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+                    <img src="images/idea.png" class="img-fluid" alt="image description">
+                    <!-- bgPattern -->
+                    <span class="bgPattern position-absolute" style="background-image: url(images/bgShapes03.png);"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 wow slideInRight">
+                  <div class="extraWrap pr-md-7 pr-lg-14">
+                    <!-- titleWrap -->
+                    <header class="titleWrap">
+                      <h3 class="mb-5">100% Administrable</h3>
+                      <p>Puedes dar accesos a tus usuarios para el manejo de distintas funcionalidades dependiendo el rol que desempeñe.</p>
+                    </header>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- tryPetAside -->
+      <aside class="tryPetAside text-center text-white py-5 py-lg-8 wow pulse">
+        <div class="container">
+          <p class="mb-0">¿Listo para comenzar? ¡Es rápido, gratis y muy fácil! <a href="javascript:void(0);"
+              class="btn btnWhite mt-3 mt-md-0 mx-md-4 mx-lg-10 btnMin p-0 border-0 position-relative" data-hover="Contactar"><span
+                class="d-block btnText">Contactar</span></a></p>
+        </div>
+      </aside>
+
+      <div id="scrollTo5" class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+        <!-- plansBlock -->
+        <section class="plansBlock pt-7 pt-md-11 pt-lg-15 pb-3 pb-md-7 pt-xl-22 pb-xl-12">
+          <div class="container">
+            <!-- headingHead -->
+            <header class="headingHead textMedium text-center mb-8 mb-md-11 mb-lg-15 wow bounceInUp">
+              <h2 class="mb-5">Servicios para empresas</h2>
+              <p>Innovación, Tecnología y Experiencia </p>
+            </header>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-lg-4 d-flex wow pulse" data-wow-delay="0.5s">
+                <!-- planColumn -->
+                <article class="planColumn position-relative mb-6 pt-6 pb-6 pb-md-8 px-4 px-md-6 w-100 d-flex flex-column shadow-lg bg-white">
+                  <div class="pcHolder flex-grow-1">
+                    <!-- headWrap -->
+                    <header class="headWrap mb-7">
+                      <!-- symbolWrap -->
+                      <span class="symbolWrap d-block mb-3">
+                        <img src="images/fabrica-de-software.jpg" class="img-fluid" alt="symbol">
+                      </span>
+                      <h3 class="h5 mb-1">Fabrica de Software</h3>
+                      <em class="d-block textEm">Desarrollamos aplicaciones móviles y plataformas web</em>
+                    </header>
+                    <em class="d-block textEm">Contamos con especialistas que brindan el servicio de Fábrica de Calidad y Desarrollo, con la finalidad
+                      de ejecutar proyectos respaldados con nuestras mejores prácticas.</em>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 d-flex wow pulse" data-wow-delay="0.5s">
+                <!-- planColumn -->
+                <article class="planColumn position-relative mb-6 pt-6 pb-6 pb-md-8 px-4 px-md-6 w-100 d-flex flex-column shadow-lg bg-white">
+                  <div class="pcHolder flex-grow-1">
+                    <!-- headWrap -->
+                    <header class="headWrap mb-7">
+                      <!-- symbolWrap -->
+                      <span class="symbolWrap d-block mb-3">
+                        <img src="images/consultoria.jpg" class="img-fluid" alt="symbol">
+                      </span>
+                      <h3 class="h5 mb-1">Innovación y Consultoría</h3>
+                    </header>
+                    <em class="d-block textEm">Cuéntanos cuál es tu proyecto o necesidad y te asesoraremos sobre la mejor forma de plantearlo y
+                      realizarlo. Ponemos a tu servicio nuestros años de experiencia para que todo salga bien.</em>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 d-flex wow pulse" data-wow-delay="0.5s">
+                <!-- planColumn -->
+                <article class="planColumn position-relative mb-6 pt-6 pb-6 pb-md-8 px-4 px-md-6 w-100 d-flex flex-column shadow-lg bg-white">
+                  <div class="pcHolder flex-grow-1">
+                    <!-- headWrap -->
+                    <header class="headWrap mb-7">
+                      <!-- symbolWrap -->
+                      <span class="symbolWrap d-block mb-3">
+                        <img src="images/cloud-service.jpg" class="img-fluid" alt="symbol">
+                      </span>
+                      <h3 class="h5 mb-1">Cloud Service</h3>
+                    </header>
+                    <em class="d-block textEm">Ayudamos creando estrategias usando Cloud Computing para brindarle la apertura y flexibilidad necesaria
+                      a las demandas del mercado actual.</em>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="scrollTo6" class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+        <!-- faqBlock -->
+        <section class="faqBlock pt-6 pt-lg-9 pt-xl-11 pb-4 pb-md-10 pb-lg-14 pb-xl-20">
+          <div class="container">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <p>Praesent consequat arcu sem, vitae accumsan nunc lacinia id. Mauris quis odio arcu donec pharetra et nibh et vulputate class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos metus.</p>
+              <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                <!-- headingHead -->
+                <header class="headingHead textMedium text-center mb-8 mb-md-11 mb-lg-15 wow bounceInUp">
+                  <h2 class="mb-2">Preguntas Frecuentes</h2>
+                  <p>Una lista de preguntas frecuentes para ayudarlo a dar respuesta a las preguntas que tenga en mente.</p>
+                </header>
               </div>
             </div>
-          </div>-->
+            <!-- faqAccordion -->
+            <div class="accordion faqAccordion" id="faqAccodion">
+              <div class="row mx-xl-n5">
+                <div class="col-12 col-md-6 px-xl-5">
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener fwMedium fontAlter position-relative collapsed" data-toggle="collapse" data-target="#collapse1"
+                      aria-expanded="false" role="button" aria-controls="collapse1">
+                      <h3 class="mb-0">¿Porqué elegir Asyncorp?</h3>
+                    </div>
+                    <div id="collapse1" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Porque es fácil de usar, protege todo tu información y además ayuda a administrar tu empresa.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener collapsed fwMedium fontAlter position-relative" data-toggle="collapse" data-target="#collapse2"
+                      aria-expanded="false" role="button" aria-controls="collapse2">
+                      <h3 class="mb-0">¿Cómo funciona Asyncorp?</h3>
+                    </div>
+                    <div id="collapse2" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Asyncorp es un servicio que asegura todos tus datos de empresa, además de tener un conjunto de herramientas como el
+                          dashboard ( interfaz gráfica) donde un usuario puede visualizar la información resumida y completa de la empresa. El acceso
+                          a esta información clave permite tomar decisiones comerciales críticas y mantener una ventaja competitiva en su industria,
+                          sin importar lo grande o pequeña sea la competencia. Cabe mencionar que Asyncorp se podrá visualizar desde cualquier
+                          dispositivo ya sea PC, Tablet o móvil.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener collapsed fwMedium fontAlter position-relative" data-toggle="collapse" data-target="#collapse3"
+                      aria-expanded="false" role="button" aria-controls="collapse3">
+                      <h3 class="mb-0">¿Por qué una aplicación móvil?</h3>
+                    </div>
+                    <div id="collapse3" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Las aplicaciones móviles permiten evolucionar a tu empresa innovando y haciendo más eficientes los procesos y tareas.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 px-xl-5">
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener collapsed fwMedium fontAlter position-relative" data-toggle="collapse" data-target="#collapse6"
+                      aria-expanded="false" role="button" aria-controls="collapse6">
+                      <h3 class="mb-0">¿En qué ayuda a tu empresa?</h3>
+                    </div>
+                    <div id="collapse6" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Cada empresa tiene su propio conjunto de procesos, productos y servicios que la hacen única. Asyncorp ayuda a las empresas
+                          tener una mayor visión y visibilidad de las operaciones de su cadena de suministro.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener collapsed fwMedium fontAlter position-relative" data-toggle="collapse" data-target="#collapse7"
+                      aria-expanded="false" role="button" aria-controls="collapse7">
+                      <h3 class="mb-0">¿Asyncorp es gratis?</h3>
+                    </div>
+                    <div id="collapse7" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Como todo servicio Asyncorp tiene un costo, pero es accesible para el presupuesto de nuestros clientes, esto quiere decir
+                          que nuestro servicio se adapta a las necesidades de estos. Se pagará una cantidad accesible para así poder tomar un control
+                          mayor en tu empresa.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- faqItem -->
+                  <div class="faqItem mb-4 wow flipInX">
+                    <!-- accOpener -->
+                    <div class="accOpener collapsed fwMedium fontAlter position-relative" data-toggle="collapse" data-target="#collapse8"
+                      aria-expanded="false" role="button" aria-controls="collapse8">
+                      <h3 class="mb-0">Consultoría Informatica</h3>
+                    </div>
+                    <div id="collapse8" class="collapse" data-parent="#faqAccodion">
+                      <!-- accSlideWrap -->
+                      <div class="accSlideWrap overflow-hidden px-3 px-md-5 pt-4 pb-2">
+                        <p>Para todas estas innovaciones tecnológicas en tu negocio, necesitas asesoría de los principales consultores especializados,
+                          permitiendo a tu empresa recopilar todos los datos necesarios, esbozando la superior solución en tu empresa.
+
+                          Tendrás el más calificado y experimentado equipo de asesores que construirá la herramienta necesaria para tus necesidades
+                          empresariales.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="row" style="margin-top:15px;">
-        <div class="col-sm-6">
+
+      <!-- getStartedAside -->
+      <aside class="getStartedAside textMedium position-relative d-flex w-100 bg-info text-center overflow-hidden">
+        <div class="d-flex w-100 gsaHolder align-items-center">
+          <div class="w-100 py-7">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 wow wobble">
+                  <h1 class="h1Medium fontBase font-weight-normal mb-4">Permítanos ayudarlo con sus problemas de diseño</h1>
+                  <p>Su solución de diseño todo en uno. Fácil de editar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="bgPattern bgPatterni inaccessible position-absolute wow bounceInDown" data-wow-delay="1s">
+          <img src="images/bgShapes05.png" class="img-fluid" alt="image description">
+        </span>
+        <span class="bgPattern bgPatternii inaccessible position-absolute  wow bounceInUp" data-wow-delay="1s">
+          <img src="images/bgShapes04.jpg" class="img-fluid" alt="image description">
+        </span>
+      </aside>
+
+
+      <div id="scrollTo7" class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+        <!-- faqBlock -->
+        <section class="faqBlock pt-6 pt-lg-9 pt-xl-11 pb-4 pb-md-10 pb-lg-14 pb-xl-20">
+
+          <iframe src="contact.html" style="overflow: hidden; height: 43rem;" width="100%" height="100%" frameborder="0" marginheight="0"
+            marginwidth="0"
+            scrolling="no">Cargando…</iframe>
+        </section>
+      </div>
+    </main>
+    <!-- ftAreaWrap -->
+    <div class="ftAreaWrap bg-primary text-gray777fa1 wow fadeIn" data-wow-delay="0.5s">
+      <!-- footerAside -->
+      <aside class="footerAside pt-20 pt-md-10 pt-lg-16 pb-1 pb-md-4 position-relative text-center text-sm-left">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-6" data-animation-name="fadeIn" data-animation-delay="02s">
-              <img width="48" height="48" src="img/4337135755.png" alt="Nube">
-              <h4>Nube</h4>
-              <p>
-                <small>Aplicaciones en la nube diseñadas para ayudar a cualquier tipo de empresa a ser más eficientes, compatibles y
-                  rentables.</small>
-              </p>
-            </div>
-            <div class="divider divider-vertical">
-              <div class="divider-content">
-                <strong class="fz-lg">+</strong>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-6 order-md-1 position-static">
+              <!-- ftLogo -->
+              <div class="ftLogo mb-6 mx-auto mx-md-0">
+                <a href="javascript:void(0);">
+                  <img src="images/logo-inverse.png" class="img-fluid" alt="asaas">
+                </a>
               </div>
-            </div>
-            <div class="col-sm-6" data-animation-name="fadeIn" data-animation-delay="03s">
-              <img width="48" height="48" src="img/4460638882.png" alt="Ideas">
-              <h4>Ideas</h4>
-              <p>
-                <small>Ideas creativas e innovadoras de un equipo de expertos brindan soluciones fuera de lo rutinario y agradable para los
-                  clientes.</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="divider divider-vertical">
-          <div class="divider-content">
-            <strong class="fz-lg">+</strong>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="col-sm-6" data-animation-name="fadeIn" data-animation-delay="04s">
-              <img width="48" height="48" src="img/4522104820.png" alt="Multiplataforma">
-              <h4>Multiplataforma</h4>
-              <p>
-                <small>Accesible desde cualquier dispositivo (PC, tablet y móvil) para la facilidad y comodidad de todos.</small>
-              </p>
-            </div>
-            <div class="divider divider-vertical">
-              <div class="divider-content">
-                <strong class="fz-lg">=</strong>
-              </div>
-            </div>
-            <div class="col-sm-6" data-animation-name="fadeIn" data-animation-delay="05s">
-              <img width="48" height="48" src="img/4608823220.png" alt="Asyncorp">
-              <h4>Asyncorp</h4>
-              <p>
-                <small>Es la solución más avanzada para a facilitar las tareas y procesos de pequeñas medianas y grandes empresas.</small>
-              </p>
+              <!-- ftAddress -->
+              <address class="ftAddress text-center text-md-left mb-6 mt-6 mt-md-0">Es un sistema 100% Web, diseñado para pequeñas, medianas y grandes
+                empresas y entregado bajo la modalidad de Software como un Servicio (SaaS).</address>
+              <!-- socialNetworks -->
+              <ul class="list-unstyled socialNetworks ftSocialNetworks d-flex justify-content-center justify-content-md-start mx-n1">
+                <li>
+                  <a href="https://web.facebook.com/asyncorp">
+                    <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/asyncorp">
+                    <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/asyncorp">
+                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-push-6">
-          <ul class="feature-list">
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="02s">
-                <span class="icon icon-dollar"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="02s">
-                <h2>Precios Flexibles</h2>
-                <p>Asyncorp ofrece los precios mas bajos del mercado porque nuestro servicio se adecua al presupuesto de cada negocio.</p>
-                <!--<p>En Asyncorp le proponemos que el sistema sea el que se adapte a usted y potencie las características de su proyecto</p>-->
-              </div>
-            </li>
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="02s">
-                <span class="icon icon-comments-o"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="02s">
-                <h2>Soporte Garantizado</h2>
-                <p>Siempre estaremos allí para ayudarte a solucionar cualquier inconveniente.</p>
-              </div>
-            </li>
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="01s">
-                <span class="icon icon-sliders"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="01s">
-                <h2>100% Administrable</h2>
-                <p>Puedes dar accesos a tus usuarios para el manejo de distintas funcionalidades dependiendo el rol que desempeñe.</p>
-              </div>
-            </li>
-
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="01s">
-                <span class="icon icon-slideshare"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="01s">
-                <h2>Involucrados con nuestros clientes</h2>
-                <p>Nos preocupa los interés y necesidades de nuestros clientes, es por eso que estamos dispuesto a ayudar en todos los aspectos que
-                  necesiten para hacer crecer sus negocios.</p>
-              </div>
-            </li>
-
-
-          </ul>
+      </aside>
+      <!-- pageFooter -->
+      <footer id="pageFooter" class="text-center fontAlter">
+        <div class="container">
+          <!-- pfHolder -->
+          <div class="pfHolder pt-7 pb-5">
+            <p><a href="javascript:void(0);">asyncorp</a> © 2020. All Rights Reserved</p>
+          </div>
         </div>
-        <div class="col-md-6 col-md-pull-6">
-          <ul class="feature-list">
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="02s">
-                <span class="icon icon-cogs"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="02s">
-                <h2>100% Personalizable</h2>
-                <p>En Asyncorp entendemos perfectamente la premisa "cada empresa y cada individuo tiene distintas necesidades". Por eso brindamos
-                  soluciones a medida, desarrollando software particular para cada necesidad.</p>
-                <!--<p>En Asyncorp le proponemos que el sistema sea el que se adapte a usted y potencie las características de su proyecto</p>-->
-              </div>
-            </li>
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="02s">
-                <span class="icon icon-heart"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="02s">
-                <h2>Fácil de instalar &amp; Usar</h2>
-                <p> No tienes que descargar ni instalar ningún software y siempre vas a trabajar con la última y mejorada versión. Ya que esta 100% en
-                  la nube y podrás acceder a ella desde cualquier dispositivo conectado a Internet.</p>
-              </div>
-            </li>
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="01s">
-                <span class="icon icon-server"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="01s">
-                <h2>Servidores en la Nube</h2>
-                <p>Implementación, configuración y mantenimiento de servidores virtuales dedicados, especialmente preparados para su negocio. Toda la
-                  información entre el navegador y el servidor se encuentra encriptada a través del protocolo de seguridad SSL.</p>
-              </div>
-            </li>
-
-            <li class="feature">
-              <div class="feature-icon" data-animation-name="rollIn" data-animation-delay="01s">
-                <span class="icon icon-clock-o"></span>
-              </div>
-              <div class="feature-content" data-animation-name="fadeInLeft" data-animation-delay="01s">
-                <h2>Alta disponibilidad</h2>
-                <p>El acceso a tu información estará disponible las 24 / 7 con toda la seguridad y confiabilidad que ofrece Asyncorp.</p>
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-      </div>
+      </footer>
     </div>
   </div>
-  <div class="section" id="preguntas-frecuentes">
-    <div class="container">
-      <h1>Preguntas Frecuentes</h1>
-      <hr class="half-rule">
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="faq-list">
-            <li class="faq" data-animation-name="fadeInLeft" data-animation-delay="01s">
-              <h4 class="faq-question">¿Porqué Elegir Asyncorp?</h4>
-              <p class="faq-answer">Porque es fácil de usar, protege todo tu información y además ayuda a administrar tu empresa.</p>
-            </li>
-            <li class="faq" data-animation-name="fadeInLeft" data-animation-delay="04s">
-              <h4 class="faq-question">¿Cómo funciona Asyncorp?</h4>
-              <p class="faq-answer">Asyncorp es un servicio que asegura todos tus datos de empresa, además de tener un conjunto de herramientas como
-                el dashboard ( interfaz gráfica) donde un usuario puede visualizar la información resumida y completa de la empresa. El acceso a esta
-                información clave permite tomar decisiones comerciales críticas y mantener una ventaja competitiva en su industria, sin importar lo
-                grande o pequeña sea la competencia. Cabe mencionar que Asyncorp se podrá visualizar desde cualquier dispositivo ya sea PC, Tablet o
-                móvil.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <ul class="faq-list">
-            <li class="faq" data-animation-name="fadeInLeft" data-animation-delay="02s">
-              <h4 class="faq-question">¿En qué ayuda a tu empresa?</h4>
-              <p class="faq-answer">Cada empresa tiene su propio conjunto de procesos, productos y servicios que la hacen única. Asyncorp ayuda a las
-                empresas tener una mayor visión y visibilidad de las operaciones de su cadena de suministro.</p>
-            </li>
-            <li class="faq" data-animation-name="fadeInLeft" data-animation-delay="03s">
-              <h4 class="faq-question">¿Asyncorp es gratis?</h4>
-              <p class="faq-answer">Como todo servicio Asyncorp tiene un costo, pero es accesible para el presupuesto de nuestros clientes, esto
-                quiere decir que nuestro servicio se adapta a las necesidades de estos. Se pagará una cantidad accesible para así poder tomar un
-                control mayor en tu empresa.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="staff" id="contacto">
-    <iframe src="contact.html" style="overflow: hidden; height: 50rem;" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"
-      scrolling="no">Cargando…</iframe>
-  </div>
-  <div class="testimonials" style="display:none">
-    <div class="container">
-      <h2>Read why our customers recommend Asyncorp:</h2>
-      <hr class="half-rule">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="testimonial" data-animation-name="fadeIn" data-animation-delay="01s">
-                <p class="testimonial-content">
-                  <span class="testimonial-quote">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus,
-                  nec massa nunc.</p>
-                <p class="testimonial-rating">
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                </p>
-                <strong>– Agatha Ford, CEO at Cactus</strong>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="testimonial" data-animation-name="fadeIn" data-animation-delay="02s">
-                <p class="testimonial-content">
-                  <span class="testimonial-quote">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus,
-                  nec massa nunc.</p>
-                <p class="testimonial-rating">
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                </p>
-                <strong>– Dave Hamilton, CEO at AppSix</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="testimonial" data-animation-name="fadeIn" data-animation-delay="03s">
-                <p class="testimonial-content">
-                  <span class="testimonial-quote">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus,
-                  nec massa nunc.</p>
-                <p class="testimonial-rating">
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                </p>
-                <strong>– Harry Walker, CEO at SemiDot</strong>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="testimonial" data-animation-name="fadeIn" data-animation-delay="04s">
-                <p class="testimonial-content">
-                  <span class="testimonial-quote">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus,
-                  nec massa nunc.</p>
-                <p class="testimonial-rating">
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                  <span class="icon icon-star"></span>
-                </p>
-                <strong>– Rebecca Fox, CEO at Visuality</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <button class="btn btn-primary btn-lg btn-pill" data-animation-name="bounceInRight" data-animation-delay="05s">Buy Asyncorp Now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <h4 class="footer-heading">Asyncorp</h4>
-          <p>
-            <small>Es un sistema 100% Web, diseñado para pequeñas, medianas y grandes empresas y entregado bajo la modalidad de Software como un
-              Servicio (SaaS).</small>
-          </p>
-          <div class="social-list" style="display: none;">
-            <a class="social-list-item" href="https://twitter.com/asyncorp">
-              <span class="icon icon-twitter"></span>
-            </a>
-            <a class="social-list-item" href="https://facebook.com/asyncorp">
-              <span class="icon icon-facebook"></span>
-            </a>
-            <a class="social-list-item" href="#">
-              <span class="icon icon-linkedin"></span>
-            </a>
-            <a class="social-list-item" href="#">
-              <span class="icon icon-vimeo"></span>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-2 col-md-offset-2" style="display: none;">
-          <h4 class="footer-heading">Asyncorp</h4>
-          <ul class="footer-links">
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Asyncorp Blog
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Asyncorp Guidelines
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Staff
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-4 col-md-2" style="display: none;">
-          <h4 class="footer-heading">Help</h4>
-          <ul class="footer-links">
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Help Center
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Asyncorp Blog
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Forums
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-4 col-md-2" style="display: none;">
-          <h4 class="footer-heading">Upgrade</h4>
-          <ul class="footer-links">
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Personal
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Organization
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Organization Plus
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Enterprise
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p>© 2020 Asyncorp, LLC. All rights reserved.</p>
-    </div>
-  </div>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/asyncorp.min.js"></script>
-  <script src="js/landing-page.min.js"></script>
+  <!-- include jQuery library -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- include bootstrap popper JavaScript -->
+  <script src="js/popper.min.js"></script>
+  <!-- include bootstrap JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- include custom JavaScript -->
+  <script src="js/jqueryCustom.js"></script>
+  <!-- include fontAwesome -->
+  <script src="https://kit.fontawesome.com/391f644c42.js"></script>
 </body>
 
 </html>
